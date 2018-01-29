@@ -1,0 +1,63 @@
+.cards-container{
+	width: 100%;
+	height: 500px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 5px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	background-color: rgb(159, 197, 185)
+	
+}
+
+.card{
+	top: 130px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.card--information .card__oneSide {
+	z-index: 0;
+}
+
+.card--information .card__twoSide {
+	z-index: 1;
+}
+
+.card__twoSide{
+	position: absolute;
+	background:white;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+
+	&__title{
+		color: rgb(41, 35, 35);
+		text-align: center;
+	}
+	
+	&__review{
+		color: rgb(10, 9, 9);
+	}
+}
+	
+
+	.card__oneSide{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 1;
+
+		&__img{
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+		
+	}
